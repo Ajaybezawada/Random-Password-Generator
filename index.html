@@ -15,15 +15,27 @@
         <div class="password-generator">
             <h2>Password Generator</h2>
             <div class="password">
-                <p id="passwordBox"></p>
+                <p id="passwordBox0"></p>
+            </div>
+            <div class="password">
+                <p id="passwordBox1"></p>
+            </div>
+            <div class="password">
+                <p id="passwordBox2"></p>
+            </div>
+            <div class="password">
+                <p id="passwordBox3"></p>
+            </div>
+            <div class="password">
+                <p id="passwordBox4"></p>
             </div>
             <div>
                 <label for="chrs">Characters</label>
-                <input type="text" id="chrs">
+                <input type="text" id="chrs" name="chrs">
             </div>
             <div>
                 <label for="length">Length</label>
-                <input type="number" id="length" min="6" max="20" value="6">
+                <input type="number" id="length" min="6" max="20" value="6" name="lengths">
             </div>
             <div>
                 <label for="num_sym">Include Symbol and Numbers</label>
@@ -39,6 +51,7 @@
             <button onclick="createPassword()">Get Random Password</button>
         </div>
     </div>
+
     <script src="script.js" async defer></script>
 </body>
 
